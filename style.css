@@ -11,6 +11,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #222;
     background-image: url(https://source.unsplash.com/1600x900/?landscape);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .card {
@@ -67,18 +72,22 @@ input.search-bar {
 }
 
 h2.city {
-    margin-block: 20px;
+    margin-block: 15px;
+    font-weight: bold;
 }
 
 h1.temp {
     margin: 0;
-    padding-block: 0.5em;
     font-size: 2em;
 }
 
 .description {
     text-transform: capitalize;
     margin-left: 5px;
+}
+
+.humidity, .wind {
+    padding: 2px;
 }
 
 .flex {
