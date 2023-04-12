@@ -66,3 +66,36 @@ input.search-bar {
     width: calc(100% - 60px);
 }
 
+h2.city {
+    margin-block: 20px;
+}
+
+h1.temp {
+    margin: 0;
+    padding-block: 0.5em;
+    font-size: 2em;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+}
